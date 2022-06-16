@@ -1,4 +1,4 @@
-# SpaceX API Android Client
+# SpaceX Android
 
 <br>
 
