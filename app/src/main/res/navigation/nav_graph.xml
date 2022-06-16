@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.joaquincollazoruiz.spacex.presentation.CompanyLaunchesFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_dialog_open_links"
+            app:destination="@id/dialog_open_links" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialog_filter_overlay"
+        android:name="com.joaquincollazoruiz.spacex.presentation.dialog.FilterDialogFragment"
+        tools:layout="@layout/fragment_main" />
+    <dialog
+        android:id="@+id/dialog_open_links"
+        android:name="com.joaquincollazoruiz.spacex.presentation.dialog.LinksDialogFragment"
+        tools:layout="@layout/dialog_fragment_links">
+        <argument
+            android:name="webcastUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="wikiUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="articleUrl"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+</navigation>

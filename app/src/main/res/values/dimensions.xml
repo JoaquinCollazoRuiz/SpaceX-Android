@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radio_button_text_gap">48dp</dimen>
+    <dimen name="heading_horizontal_padding">24dp</dimen>
+    <dimen name="launch_field_max_width">150dp</dimen>
+    <dimen name="links_space_between_buttons">24dp</dimen>
+</resources>

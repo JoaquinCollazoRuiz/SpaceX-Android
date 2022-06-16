@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    style="@style/Clickable"
+    android:background="@color/light_grey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="16dp">
+
+    <ImageView
+        android:id="@+id/patchIcon"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="8dp"
+        android:contentDescription="@string/launch_icon_content_description"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/icon_rocket" />
+
+    <TextView
+        android:id="@+id/header_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/launch_heading_mission"
+        app:layout_constraintStart_toEndOf="@+id/patchIcon"
+        app:layout_constraintTop_toTopOf="@id/patchIcon" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:gravity="end"
+        android:maxWidth="@dimen/launch_field_max_width"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_mission"
+        tools:text="Falcon 9 Test" />
+
+    <TextView
+        android:id="@+id/header_dateAtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_heading_date"
+        app:layout_constraintStart_toStartOf="@+id/header_mission"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <TextView
+        android:id="@+id/dateAtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxWidth="@dimen/launch_field_max_width"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@id/header_dateAtTime"
+        tools:text="2010-06-04 at 18:45" />
+
+    <TextView
+        android:id="@+id/header_rocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_heading_rocket"
+        app:layout_constraintStart_toStartOf="@+id/header_dateAtTime"
+        app:layout_constraintTop_toBottomOf="@id/dateAtTime" />
+
+    <TextView
+        android:id="@+id/rocketNameType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxWidth="@dimen/launch_field_max_width"
+        app:layout_constraintEnd_toEndOf="@+id/dateAtTime"
+        app:layout_constraintTop_toTopOf="@id/header_rocket"
+        tools:text="Falcon 9 / rocket" />
+
+    <TextView
+        android:id="@+id/header_daysSinceFromNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/header_rocket"
+        app:layout_constraintTop_toBottomOf="@id/rocketNameType"
+        tools:text="Days {since/from} now:" />
+
+    <TextView
+        android:id="@+id/daysSinceFromNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxWidth="@dimen/launch_field_max_width"
+        app:layout_constraintEnd_toEndOf="@+id/rocketNameType"
+        app:layout_constraintTop_toTopOf="@id/header_daysSinceFromNow"
+        tools:text="4383 days since now" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

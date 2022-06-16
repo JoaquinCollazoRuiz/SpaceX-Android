@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+
+    <!-- Actions -->
+    <string name="action_filter">Filter</string>
+
+    <!--  Main Screen  -->
+    <string name="heading_launches">LAUNCHES</string>
+
+    <!-- Launches list -->
+    <string name="launch_icon_content_description">Mission launch patch image</string>
+    <string name="launch_status_icon_content_description">Mission launch status image</string>
+    <string name="launch_heading_mission">Mission:</string>
+    <string name="launch_heading_date">Date/time:</string>
+    <string name="launch_field_date_template">%1$s-%2$s-%3$s at %4$s:%5$s</string>
+    <string name="launch_heading_rocket">Rocket:</string>
+    <string name="launch_heading_days_since">since</string>
+    <string name="launch_heading_days_from">from</string>
+    <string name="launch_heading_days_template">Days %1$s now:</string>
+    <string name="launch_days_until_field_template">in %1$d %2$s</string>
+    <string name="launch_days_since_field_template">%1$d %2$s ago</string>
+    <string name="launch_rocket_field_template">%1$s / %2$s</string>
+
+    <!--  Sorting & Filtering  -->
+    <string name="sorting_order">Sorting Order</string>
+    <string name="filter_by_year_clear_content_description">Clear year filter</string>
+    <string name="filter_by_year_clear">All Launches</string>
+    <string name="filter_by_launch_status">Launch Status</string>
+    <string name="filter_by_launch_all">All Launches</string>
+    <string name="filter_by_launch_successful">Only Successful Launches</string>
+    <string name="filter_by_launch_failed">Only Failed Launches</string>
+    <string name="sort_ascending">Oldest to newest</string>
+    <string name="sort_descending">Newest to oldest</string>
+
+    <!--  Links  -->
+    <string name="links_heading">Links</string>
+    <string name="links_webcast">Webcast</string>
+    <string name="links_article">Article</string>
+    <string name="links_wiki">Wiki</string>
+    <string name="links_none_available">No Links Available</string>
+    <string name="links_image_content_description">Opens in another window</string>
+
+    <!--  Errors  -->
+    <string name="unknown_error_message">Could not get the latest data. Check connection &amp; try again</string>
+    <string name="swipe_down_to_refresh">No launches with matching criteria\nSwipe down to refresh</string>
+
+    <!--  Other  -->
+    <string name="loading">Loading…</string>
+    <string name="blank" />
+    <string name="unknown_value_field">unknown</string>
+
+</resources>
